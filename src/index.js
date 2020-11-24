@@ -55,7 +55,7 @@ app.post("/update", async (req, res, next) => {
 
     res.redirect("back");
   } catch (error) {
-    console.error(error);
+    console.error(error.message);
   }
 });
 
